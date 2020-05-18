@@ -11,9 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-//kjhkjh
-
+Route::get('/', 'HomeController@show');
