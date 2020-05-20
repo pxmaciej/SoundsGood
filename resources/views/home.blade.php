@@ -7,14 +7,15 @@
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
+                <div class="card-body text-center">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <button type="button" class="btn btn-info">GRAJ</button>
+                 
+                    <a type="button" class="btn btn-success" href="/game/{{Auth::user()->id}}">GRAJ</a>
+                  
                 </div>
             </div>
         </div>
