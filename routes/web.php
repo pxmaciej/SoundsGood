@@ -13,5 +13,6 @@
 
 Route::get('/', 'HomeController@index');
 Auth::routes();
-
+Route::get('/game/{id}', 'GameController@index');
 Route::get('/home', 'HomeController@index')->name('home');
+
