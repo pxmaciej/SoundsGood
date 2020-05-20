@@ -21,10 +21,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Soundsgood') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -75,6 +75,20 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <div class="container bg-dark , color: white;">
+    <div class="row justify-content-center, ">
+        <div class="col-md-8">jak sie nazwa wykonawca
+         </div>
+        <div class="col-md-4">nazywa sie:
+            <div class="col">jurek
+            </div>
+            <div class="col">marek
+                </div>
+             <div class="col">barek
+                </div>
+        </div>
+    </div>
+</div>
     </div>
 </body>
 </html>
