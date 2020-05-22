@@ -75,20 +75,19 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <div class="container bg-dark , color: white;">
-    <div class="row justify-content-center, ">
-        <div class="col-md-8">jak sie nazwa wykonawca
-         </div>
-        <div class="col-md-4">nazywa sie:
-            <div class="col">jurek
-            </div>
-            <div class="col">marek
-                </div>
-             <div class="col">barek
-                </div>
-        </div>
-    </div>
-</div>
+        
+
+
+ 
+
+
+
+
+
+
+
+
+
     </div>
 </body>
 </html>
