@@ -78,12 +78,6 @@
             
         </main>
         
-       
-        <main class="py-4">
-            @yield('game')
-            
-        </main>
-        
     </div>
 </body>
 </html>
