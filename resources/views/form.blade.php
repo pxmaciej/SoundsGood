@@ -1,28 +1,31 @@
 @extends('home')
 
 @section('game')
-@if( $update  =='play')
+@if( $wrong  < 3 )
 <main class="py-4">
     <div class="container">
         <div class="row justify-content-center">
             
-                    <div class="col-md-5">
-            
-                        <audio autoplay id="song">
-                            <source src="{!! $track->track->preview_url !!}" type="audio/mp3">
-                        </audio>
-                
+                    <div class="col-md-4">
+                        <div class="row">
+                            <audio autoplay id="song">
+                                <source src="{!! $current_track->track->preview_url !!}" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="row">
+                         <h2>Punkty {{$points}}</h2>
+                        </div>
                     </div>
 
-                    <div class="col-md-2">nazywa sie:
-                            
+                    <div class="col-md-8"><h3>Wykonwaca</h3>
+                          
                             @foreach($tracks as $track)
                             <div class="row">
-                                <button class="btn btn-success"  name="answer"  type="submit" value="{{ $track->track->id }}" href="{{}}">
-                                    {{ $track->track->name}}
-                                </button>
-                            </div>
 
+                            <a class="btn btn-outline-success btn-lg" href="/points/{{$track->track->id}}/{{$current_track->track->id}}/{{$points}}/{{$wrong}}"> {{ collect($track->track->artists)->implode('name') }}</a> 
+                                
+                            </div>
+                             
                             @endforeach
                          
                     </div>

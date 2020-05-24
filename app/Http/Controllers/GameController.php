@@ -14,8 +14,10 @@ class GameController extends Controller
     //
        
 
-    public function index(int $id){
-    
+    public function index($points, $wrong){
+       
+        
+        
         $update='play';
         $limit = 100;
         $offset = 100;
@@ -25,7 +27,8 @@ class GameController extends Controller
            // O_25srbGRMuWjM4IAzyTQg
            //5GEf0fJs9xBPr5R4jEQjtw
           //37i9dQZEVXbN6itCcaL3Tt
-            $playlist = $api->getPlaylist('37i9dQZEVXbN6itCcaL3Tt', $limit, $offset);
+          //spotify:playlist:37i9dQZF1DX4UtSsGT1Sbe
+            $playlist = $api->getPlaylist('37i9dQZF1DX4UtSsGT1Sbe', $limit, $offset);
           
         } catch(\Rennokki\Larafy\Exceptions\SpotifyAPIException $e) {
             // invalid data sent
@@ -51,9 +54,8 @@ class GameController extends Controller
 
            
 
-     
-        
-      return View::make('form',['track' => $current_track, 'tracks' => $shuffled,'update'=> $update]);
+   
+      return View::make('form',['current_track' => $current_track, 'tracks' => $shuffled,'update'=> $update, 'points'=>$points, 'wrong' => $wrong]);
         
         
 

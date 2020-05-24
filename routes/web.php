@@ -13,6 +13,6 @@
 
 Route::get('/', 'HomeController@index');
 Auth::routes();
-Route::get('/game/{id}', 'GameController@index');
+Route::get('/game/{points}/{wrong}', 'GameController@index');
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/points/{song_id}/{current_track}/{points}/{wrong}', 'GamePointsController@index');
