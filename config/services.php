@@ -34,4 +34,10 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+    'spotify' => [
+        'client_id' => env('8e7bdb2251274727bb96bc8100d8a5db'),
+        'client_secret' => env('c33612abf7e2452d87581511be374880'),
+        'redirect' => env('http://localhost:8888/callback')
+    ],
+
 ];

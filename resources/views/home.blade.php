@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -13,12 +14,22 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                 
-                    <a type="button" class="btn btn-success" href="/game/{{Auth::user()->id}}">GRAJ</a>
-                  
+               
+                    <a id="play" type="button" class="btn btn-success" href="/game/{{Auth::user()->id}}">GRAJ</a>
+                   
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+    @yield('game')
+    
+</main>
+
 @endsection
+
+
+
+
