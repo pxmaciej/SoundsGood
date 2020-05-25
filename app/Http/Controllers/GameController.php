@@ -24,23 +24,23 @@ class GameController extends Controller
         $api = new Larafy('8e7bdb2251274727bb96bc8100d8a5db', 'c33612abf7e2452d87581511be374880');
         $api->setMarket('PL')->setLocale('pl_PL');
         try {
-           // O_25srbGRMuWjM4IAzyTQg
-           //5GEf0fJs9xBPr5R4jEQjtw
-          //37i9dQZEVXbN6itCcaL3Tt
-          //spotify:playlist:37i9dQZF1DX4UtSsGT1Sbe
+        // O_25srbGRMuWjM4IAzyTQg
+        //5GEf0fJs9xBPr5R4jEQjtw
+        //37i9dQZEVXbN6itCcaL3Tt
+        //37i9dQZF1DX4UtSsGT1Sbe
             $playlist = $api->getPlaylist('37i9dQZF1DX4UtSsGT1Sbe', $limit, $offset);
           
         } catch(\Rennokki\Larafy\Exceptions\SpotifyAPIException $e) {
-            // invalid data sent
+            
             $e->getAPIResponse(); // Get the JSON API response.
         }   
-        //@dd($playlist);
-           $temp = $playlist->tracks->items;
+    //@dd($playlist);
+         
 
        
-        // @dd($temp);
+     
         
-           $tracks = collect($temp)->filter(function( $item){
+           $tracks = collect($playlist->tracks->items)->filter(function( $item){
                return $item->track->preview_url != null;
            })->shuffle()->take(3); 
         

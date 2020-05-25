@@ -80,4 +80,12 @@
         
     </div>
 </body>
+<script>
+    $(document).ready(function () {
+        // Hide the div
+        $("").hide();
+        // Show the div after 5s
+        $("").delay(5000).fadeIn(100);  
+    });    
+</script>
 </html>

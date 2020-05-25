@@ -16,8 +16,9 @@
                     @endif
                
                     <a id="play" type="button" class="btn btn-success" href="/game/{{$points=0}}/{{$wrong = 0}}">GRAJ</a>
-                      @yield('game')
-
+                     
+                    @yield('game')
+                    
                 </div>
             </div>
         </div>

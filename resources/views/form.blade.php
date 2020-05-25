@@ -14,6 +14,8 @@
                         </div>
                         <div class="row">
                          <h2>Punkty {{$points}}</h2>
+                        <h2>Błędy {{$wrong}}</h2>
+                   
                         </div>
                     </div>
 
@@ -35,5 +37,5 @@
 </main>
 @endif 
 @endsection
- 
+
 
