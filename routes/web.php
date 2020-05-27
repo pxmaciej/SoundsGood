@@ -11,8 +11,12 @@
 |
 */
 
+use App\Http\Controllers\LeaderBoardController;
+use App\Leaderboard;
+
 Route::get('/', 'HomeController@index');
 Auth::routes();
-Route::get('/game/{points}/{wrong}', 'GameController@index');
+Route::get('/game/{points}/{wrong}/{temp}', 'GameController@index');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/points/{song_id}/{current_track}/{points}/{wrong}', 'GamePointsController@index');
+Route::get('/points/{song_id}/{current_track}/{points}/{wrong}/{temp}', 'GamePointsController@index');
+Route::get('/leaderboard','LeaderBoardController@index');
