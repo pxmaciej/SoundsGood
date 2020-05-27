@@ -41,7 +41,7 @@
                             @foreach($tracks as $track)
                             <div class="row">
 
-                            <a class="btn btn-outline-success btn-lg" href="/points/{{$track->track->id}}/{{$current_track->track->id}}/{{$points}}/{{$wrong}}/{{$temp}}"> {{ collect($track->track->artists)->implode('name') }} - {{$track->track->name}}</a> 
+                            <a class="btn btn-outline-success btn-lg" href="/points/{{$track->track->id}}/{{$current_track->track->id}}/{{$points}}/{{$wrong}}/{{$temp}}"> {{ collect($track->track->artists)->implode('name') }} - {{ str_limit($track->track->name,20)}}</a> 
                                 
                             </div>
                              
