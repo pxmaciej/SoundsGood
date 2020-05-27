@@ -9,31 +9,36 @@ use Illuminate\Support\Facades\Auth;
 
 class GamePointsController extends Controller
 {
-   public function index($song_id, $current_track, $points, $wrong){
-       
+  
+   public function index($song_id, $current_track, $points, $wrong, $temp){
     
-    if($wrong <2){
-      
+
         if($song_id == $current_track){
                 $points += 1;
+             
             }else{
                 $wrong +=1;
-            }   
-    }else{
-        $upoints = Leaderboard::where('id_user', Auth::user()->id)->find('points');
-      
-        if($upoints < $points || $upoints == null){
-           $newpoints = new Leaderboard;
-            $newpoints->id_user = Auth::user()->id;
-            $newpoints->name = Auth::user()->name;
-            $newpoints->points = $points;
-            $newpoints->save();
+               
+            }    
+    
+           
+
+    if($wrong >= 3){
+      $upoints = collect(Leaderboard::where('id_user', [Auth::user()->id])->get('points'))->implode('points');
+
+ 
+
+        if($upoints == null){
+            Leaderboard::LeaderSave($points);
             
+        }elseif($points > $upoints){
+            Leaderboard::where('id_user',Auth::user()->id)->update(["points" => $points]);
         }
     }    
         
             
 
-   return redirect()->action('GameController@index', ['points' => $points, 'wrong' => $wrong]);
+   return redirect()->action('GameController@index', ['points' => $points, 'wrong' => $wrong, 'temp'=>$temp]);
+   
    }
 }
