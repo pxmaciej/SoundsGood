@@ -47,6 +47,7 @@ class GameController extends Controller
                ++$temp;
                 $answer =false;
            }
+           //@dd($temp);
  
       return View::make('form',['current_track' => $current_track, 'tracks' => $shuffled,'update'=> $update, 'points'=>$points, 'wrong' => $wrong, 'answer' => $answer, 'temp'=>$temp]);
 
