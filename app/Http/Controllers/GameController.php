@@ -18,7 +18,7 @@ class GameController extends Controller
         $update='play';
         $limit = 100;
         $offset = 100;
-        $api = new Larafy('8e7bdb2251274727bb96bc8100d8a5db', 'c33612abf7e2452d87581511be374880');
+        $api = new Larafy('00c8ff1427674a0e9d26895bb85ced9b', '59e6f9c975a94daab60ef101c3c52671');
         $api->setMarket('PL')->setLocale('pl_PL');
         try {
         // O_25srbGRMuWjM4IAzyTQg

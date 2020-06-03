@@ -1,4 +1,6 @@
+
 @extends('home')
+
 
 @section('game')
 @if( $wrong  < 3 )
@@ -12,7 +14,8 @@
                             
                                 <source src="{!! $current_track->track->preview_url !!}" type="audio/mp3">   
                             </audio>
-                        <progress class="progress is-info" id="playtime" max="30" value="0"></progress>
+                           
+                              <progress class="progress-bar" id="playtime" max="30" value="0"></progress>
                        </div>
                             
                         <div class="row">
@@ -53,8 +56,8 @@
     </div>
 </main>
 @endif 
-
 @endsection
+
 @section('script')
 <script>
     setInterval(function() {
@@ -64,5 +67,6 @@
    },10); 
 </script>
 @endsection
+
 
 
