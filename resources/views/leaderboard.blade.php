@@ -16,7 +16,7 @@
                 <td>{{$item->name}}</td>
                 <td>{{$item->points}}</td>
               </tr>
-
+            
               @endforeach
             </tbody>
           </table>
