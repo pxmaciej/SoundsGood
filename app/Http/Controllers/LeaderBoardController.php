@@ -9,7 +9,8 @@ use View;
 class LeaderBoardController extends Controller
 {
     public function index(){
-        $points = Leaderboard::all();
+        $points = Leaderboard::orderBy('points','desc')->get();
+        
         return View::make('leaderboard',['list' => $points]);
     }
 }

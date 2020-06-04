@@ -10928,3 +10928,341 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-image: linear-gradient(74deg, rgba(236, 236, 236, 0.02) 0%, rgba(236, 236, 236, 0.02) 13%, transparent 13%, transparent 64%, rgba(55, 55, 55, 0.02) 64%, rgba(55, 55, 55, 0.02) 71%, rgba(239, 239, 239, 0.02) 71%, rgba(239, 239, 239, 0.02) 100%), linear-gradient(170deg, rgba(8, 8, 8, 0.02) 0%, rgba(8, 8, 8, 0.02) 1%, transparent 1%, transparent 60%, rgba(9, 9, 9, 0.02) 60%, rgba(9, 9, 9, 0.02) 80%, rgba(198, 198, 198, 0.02) 80%, rgba(198, 198, 198, 0.02) 100%), linear-gradient(118deg, rgba(134, 134, 134, 0.02) 0%, rgba(134, 134, 134, 0.02) 30%, transparent 30%, transparent 43%, rgba(85, 85, 85, 0.02) 43%, rgba(85, 85, 85, 0.02) 47%, rgba(103, 103, 103, 0.02) 47%, rgba(103, 103, 103, 0.02) 100%), linear-gradient(249deg, rgba(178, 178, 178, 0.02) 0%, rgba(178, 178, 178, 0.02) 8%, transparent 8%, transparent 47%, rgba(161, 161, 161, 0.02) 47%, rgba(161, 161, 161, 0.02) 61%, rgba(19, 19, 19, 0.02) 61%, rgba(19, 19, 19, 0.02) 100%), linear-gradient(90deg, white, white);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.table {
+  background-image: radial-gradient(circle at 24% 23%, rgba(167, 167, 167, 0.06) 0%, rgba(167, 167, 167, 0.06) 25%, rgba(148, 148, 148, 0.06) 25%, rgba(148, 148, 148, 0.06) 50%, rgba(129, 129, 129, 0.06) 50%, rgba(129, 129, 129, 0.06) 75%, rgba(110, 110, 110, 0.06) 75%, rgba(110, 110, 110, 0.06) 100%), radial-gradient(circle at 58% 30%, rgba(14, 14, 14, 0.06) 0%, rgba(14, 14, 14, 0.06) 25%, rgba(60, 60, 60, 0.06) 25%, rgba(60, 60, 60, 0.06) 50%, rgba(107, 107, 107, 0.06) 50%, rgba(107, 107, 107, 0.06) 75%, rgba(153, 153, 153, 0.06) 75%, rgba(153, 153, 153, 0.06) 100%), radial-gradient(circle at 79% 53%, rgba(225, 225, 225, 0.06) 0%, rgba(225, 225, 225, 0.06) 25%, rgba(189, 189, 189, 0.06) 25%, rgba(189, 189, 189, 0.06) 50%, rgba(152, 152, 152, 0.06) 50%, rgba(152, 152, 152, 0.06) 75%, rgba(116, 116, 116, 0.06) 75%, rgba(116, 116, 116, 0.06) 100%), linear-gradient(221deg, black, black);
+}
+
+.game {
+  margin-top: 1em;
+}
+
+progress[value] {
+  width: 100%;
+  height: 1.5em;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: linear-gradient(135deg, rgba(149, 13, 195, 0.28) 0%, rgba(149, 13, 195, 0.28) 20%, rgba(134, 50, 200, 0.28) 20%, rgba(134, 50, 200, 0.28) 40%, rgba(119, 87, 204, 0.28) 40%, rgba(119, 87, 204, 0.28) 60%, rgba(104, 123, 209, 0.28) 60%, rgba(104, 123, 209, 0.28) 80%, rgba(89, 160, 213, 0.28) 80%, rgba(89, 160, 213, 0.28) 100%), linear-gradient(45deg, rgba(5, 3, 189, 0.28) 0%, rgba(5, 3, 189, 0.28) 20%, rgba(9, 48, 201, 0.28) 20%, rgba(9, 48, 201, 0.28) 40%, rgba(14, 93, 212, 0.28) 40%, rgba(14, 93, 212, 0.28) 60%, rgba(18, 137, 224, 0.28) 60%, rgba(18, 137, 224, 0.28) 80%, rgba(22, 182, 235, 0.28) 80%, rgba(22, 182, 235, 0.28) 100%), linear-gradient(90deg, #3d738d, #01d931);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.start {
+  font-family: "Arial";
+  font-weight: 300;
+  font-size: 2.9em;
+  margin: 15px 0 0;
+  color: #0db893;
+  cursor: pointer;
+}
+
+.start:hover {
+  -webkit-animation: text-flicker 2s linear forwards;
+          animation: text-flicker 2s linear forwards;
+}
+
+.start:hover .first {
+  -webkit-animation: letter-flicker 3s linear infinite;
+          animation: letter-flicker 3s linear infinite;
+}
+
+@-webkit-keyframes text-flicker {
+  2% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  3% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  6% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  9% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  11% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  14% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  18% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  32% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  33% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  37% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  39% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  43% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  46% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  47% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  100% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+}
+
+@keyframes text-flicker {
+  2% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  3% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  6% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  9% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  11% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  14% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  18% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  32% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  33% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  37% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  39% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  43% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  46% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  47% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  100% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+}
+
+@-webkit-keyframes letter-flicker {
+  2% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  3% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  6% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  9% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  11% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  14% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  18% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  32% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  33% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  37% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  39% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  40% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  100% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+}
+
+@keyframes letter-flicker {
+  2% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  3% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  6% {
+    color: #22c28c;
+    text-shadow: 0 0 15px #17a374;
+  }
+
+  9% {
+    color: #22c28c;
+    text-shadow: none;
+  }
+
+  11% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  14% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  18% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  32% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  33% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  37% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  39% {
+    color: #2fccaa;
+    text-shadow: none;
+  }
+
+  40% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+
+  100% {
+    color: #2fccaa;
+    text-shadow: 0 0 15px #2ceef5;
+  }
+}
+
