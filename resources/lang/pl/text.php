@@ -13,4 +13,9 @@ return [
     'id' => 'ID',
     'nick' => 'Pseudonim',
     'points' => 'Punkty',
+    'display4' => 'Zagraj i zgadnij co to za piosenka! ',
+    'goal' => 'Celem gry jest zdobycie jak największej liczby punktów.',
+    'gameflowt' => 'Przebieg gry:',
+    'gameflow' => '
+    Zostanie ci wylosowana playlista z utworami. Twoim zadaniem jest wybranie spośród trzech odpowiedzi prawidłową, za która otrzymasz punkt. Gra kończy się po nietrafieniu trzech utworów.',
 ];

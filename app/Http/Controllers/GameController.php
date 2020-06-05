@@ -25,8 +25,10 @@ class GameController extends Controller
         //5GEf0fJs9xBPr5R4jEQjtw
         //37i9dQZEVXbN6itCcaL3Tt
         //37i9dQZF1DX4UtSsGT1Sbe
-        //spotify:playlist:015oQ6iyPKzJESbUwxjeNI
-            $playlist = $api->getPlaylist('015oQ6iyPKzJESbUwxjeNI', $limit, $offset);
+        //spotify:playlist:015oQ6iyPKzJESbUwxjeNI moja playlista
+       // spotify:playlist:37i9dQZF1DX68H8ZujdnN7 lata 80 rock
+       //spotify:playlist:37i9dQZF1DXb57FjYWz00c lata 80 hity
+            $playlist = $api->getPlaylist('37i9dQZF1DXb57FjYWz00c', $limit, $offset);
           
         } catch(\Rennokki\Larafy\Exceptions\SpotifyAPIException $e) {
             

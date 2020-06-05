@@ -10963,7 +10963,6 @@ progress[value]::-webkit-progress-value {
   font-family: "Arial";
   font-weight: 300;
   font-size: 2.9em;
-  margin: 15px 0 0;
   color: #0db893;
   cursor: pointer;
 }
@@ -10973,7 +10972,12 @@ progress[value]::-webkit-progress-value {
           animation: text-flicker 2s linear forwards;
 }
 
-.start:hover .first {
+.start:first {
+  -webkit-animation: letter-flicker 3s linear infinite;
+          animation: letter-flicker 3s linear infinite;
+}
+
+.first {
   -webkit-animation: letter-flicker 3s linear infinite;
           animation: letter-flicker 3s linear infinite;
 }

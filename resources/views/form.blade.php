@@ -51,7 +51,7 @@
        elapsedTime = document.getElementById('song').currentTime;
        document.getElementById('playtime').value = elapsedTime;
        var song = document.getElementById("song");
-        song.volume = 0.020;
+        song.volume = 0.099;
    },10); 
    
 </script>

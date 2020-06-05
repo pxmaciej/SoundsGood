@@ -21,11 +21,10 @@
                     <div class="container text-white">
                         <div class="row justify-content-center">
                             <div class="card-body">
-                                    <h1 class="display-4">Zagraj i zagnij co to za piosenka! </h1>
-                                        <p class="lead card-text">Celem gry jest zdobycie jak największej liczby punktów.</p>
-                                        <p class="lead card-text">Przebieg gry:</p> 
-                                        <p class="lead card-text">Zostanie tobie wylosowana playlista z utówrami. Twoim zadaniem jest wybranie z pośród
-                                            trzech odpowiedzi prawidłową za która otrzymasz punkt. Gra kończy się po nietrafieniu trzech utworów.</p>
+                                    <h1 class="display-4">{{__('text.display4')}}</h1>
+                                        <p class="lead card-text">{{__('text.goal')}}</p>
+                                        <p class="lead card-text">{{__('text.gameflowt')}}</p> 
+                                        <p class="lead card-text">{{__('text.gameflow')}}</p>
                             </div>
                         </div> 
                     </div>
