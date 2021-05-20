@@ -20,16 +20,15 @@ use Illuminate\Support\Facades\Route;
 
 
 
-  Route::group(['middleware' => 'throttle:60,1'], function () {
+  Route::group(['middleware' => 'throttle:3,1'], function () {
         Route::get('/', 'HomeController@index');
         Auth::routes();
         Route::get('lang/{locale}', function ($locale){
             Session::put('locale', $locale);
             return redirect()->back();
-        });
         Route::get('/game/{points}/{wrong}/{temp}', 'GameController@index')->middleware('auth');
         Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
         Route::get('/points/{song_id}/{current_track}/{points}/{wrong}/{temp}', 'GamePointsController@index')->middleware('auth');
         Route::get('/leaderboard','LeaderBoardController@index');
-
+        });
   });
