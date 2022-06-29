@@ -7,13 +7,13 @@ The game will randomly show you 30sec tracks from the playlist in Spotify. Your 
 
 
 ### Home Page
-![home look](/image/home.png)
+![home look](public/image/home.png)
 
 ### Game
-![game look](/image/game.png)
+![game look](public/image/game.png)
 
 ### Leaderboard
-![leaderboard look](/image/leaderboard.png)
+![leaderboard look](public/image/leaderboard.png)
 
 ## Getting Started
 
