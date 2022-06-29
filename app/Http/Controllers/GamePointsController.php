@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class GamePointsController extends Controller
 {
   
-   public function index($song_id, $current_track, $points, $wrong, $temp){
+   public function index($song_id, $current_track, $points, $wrong){
     
 
         if($song_id == $current_track){
@@ -18,16 +18,10 @@ class GamePointsController extends Controller
              
             }else{
                 $wrong +=1;
-               
             }    
-    
-           
 
     if($wrong >= 3){
       $upoints = collect(Leaderboard::where('id_user', [Auth::user()->id])->get('points'))->implode('points');
-
- 
-
         if($upoints == null){
             Leaderboard::LeaderSave($points);
             
@@ -35,10 +29,6 @@ class GamePointsController extends Controller
             Leaderboard::where('id_user',Auth::user()->id)->update(["points" => $points]);
         }
     }    
-        
-            
-
-   return redirect()->action('GameController@index', ['points' => $points, 'wrong' => $wrong, 'temp'=>$temp]);
-   
+   return redirect()->action('GameController@index', ['points' => $points, 'wrong' => $wrong]);
    }
 }

@@ -15,7 +15,7 @@
                 <div class="card-body bg-dark">
                    
                
-                <a id="play" type="button" class="btn start border-3 border-success" href="/game/{{$points=0}}/{{$wrong = 0}}/{{$temp = 0}}">{{__('text.button')}}<span class="first">{{__('text.button1')}}</span></a>
+                <a id="play" type="button" class="btn start border-3 border-success" href="/game/{{$points=0}}/{{$wrong = 0}}">{{__('text.button')}}<span class="first">{{__('text.button1')}}</span></a>
                      
                     @yield('game')
                     <div class="container text-white">
