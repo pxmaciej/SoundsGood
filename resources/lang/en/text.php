@@ -4,7 +4,7 @@ return [
     'button' => 'GAM',
     'button1' => 'E',
     'start' => "Let's start the game!",
-    'board' => 'Leader Boards',
+    'board' => 'Leaderboard',
     'points' => 'Points:',
     'life' => 'Errors:',
     'wrong' => 'WRONG!',

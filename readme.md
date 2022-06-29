@@ -3,6 +3,18 @@
 The game will randomly show you 30sec tracks from the playlist in Spotify. Your goal is to take the most point is possible. Remember you can have only three errors.
 
 
+## Screenshots
+
+
+### Home Page
+![home look](/image/home.png)
+
+### Game
+![game look](/image/game.png)
+
+### Leaderboard
+![leaderboard look](/image/leaderboard.png)
+
 ## Getting Started
 
 * You should download and install the Laragon package.
