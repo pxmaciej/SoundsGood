@@ -22,12 +22,12 @@ class GameController extends Controller
             
             $e->getAPIResponse(); // Get the JSON API response.
         }   
-            //collect 3 tracks from API and shuffle
+            //Collect 3 tracks from API and shuffle
            $tracks = collect($playlist->tracks->items)->filter(function( $item){
                return $item->track->preview_url != null;
            })->shuffle()->take(3);   
 
-           $current_track = $tracks->first(); //correct answer 
+           $current_track = $tracks->first(); //Correct answer 
            $shuffled = $tracks->shuffle(); 
 
       return View::make('form',['current_track' => $current_track, 'tracks' => $shuffled, 'points'=>$points, 'wrong' => $wrong]);

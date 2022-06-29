@@ -37,12 +37,14 @@
 @section('script')
 <script>
     setInterval(function() {
-    
        elapsedTime = document.getElementById('song').currentTime;
        document.getElementById('playtime').value = elapsedTime;
        var song = document.getElementById("song");
         song.volume = 100;
    },10); 
+   setTimeout(() => {
+    location.reload(true)
+   }, 30000);
 </script>
 @endsection
 
